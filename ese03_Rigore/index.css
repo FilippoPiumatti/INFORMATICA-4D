@@ -1,0 +1,45 @@
+body {
+	background-image: url("img/porta.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 800px;
+}
+
+
+#buttons{
+	cursor: pointer;
+	margin-left: 390px;
+}
+
+button{
+	margin-top: 650px;
+	border-radius: 5px;
+	background-color: lightcyan;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+#portiere{
+	width: 270px;
+	height: 236px;
+	position: absolute;
+	top:330px;
+	left:635px;
+}
+
+
+#palla {
+	width:100px;
+    height:100px;
+	position: absolute;
+	top: 585px;
+	left:720px;
+}
+#portas{
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	top:580px;
+	left: 728;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE netflix SYSTEM "netflix.dtd">
+<netflix>
+    <film>
+        <title>UP</title>
+        <author>J. K. Rowling</author>
+
+        <year>2020</year>
+        <cast>
+            <actor>K. Kostner</actor>
+            <actor>B. Afleck</actor>
+        </cast>
+        <distribution>
+            <company>Warner Bros</company>
+            <company>Paramount</company>
+        </distribution>
+        <streaming>1.5</streaming>
+    </film>
+    <film category='horror'>
+        <title>Non aprite quella porta</title>
+        <author>S. King</author>
+        <year>2016</year>
+        <cast>
+            <actor>C. Diaz</actor>
+            <actor>B. Afleck</actor>
+            <actor>M. Rowling</actor>
+        </cast>
+        <distribution>
+            <company>Paramount</company>
+        </distribution>
+        <streaming>2</streaming>
+    </film>
+    <film category='action'>
+        <title>Mission Impossible I</title>
+        <author>J. Wood</author>
+        <year>2004</year>
+        <cast>
+            <actor>T. Cruise</actor>
+            <actor>H. Hopkins</actor>
+        </cast>
+        <distribution>
+            <company>Paramount</company>
+            <company>Netflix International</company>
+            <company>Catleya</company>
+        </distribution>
+        <streaming>4.5</streaming>
+    </film>
+    <film category="action">
+        <title>Mission Impossible II</title>
+        <author>J. Wood</author>
+        <year>2009</year>
+        <cast>
+            <actor>T. Cruise</actor>
+            <actor>H. Hopkins</actor>
+            <actor>P. Cruz</actor>
+        </cast>
+        <distribution>
+            <company>Paramount</company>
+            <company>Netflix International</company>
+        </distribution>
+        <streaming>3.5</streaming>
+    </film>
+    <film category='action'>
+        <title>Roberto Baggio</title>
+        <author>G. Muccino</author>
+        <year>2020</year>
+        <cast>
+            <actor>R. Scamarcio</actor>
+            <actor>G. Golino</actor>
+            <actor>M. Leone</actor>
+            <actor>G. Pasotti</actor>
+            <actor>L. Casta</actor>
+        </cast>
+        <distribution>
+            <company>Catleya</company>
+        </distribution>
+        <streaming>7.5</streaming>
+    </film>
+    <film category='action'>
+        <title>Person of Interest</title>
+        <author>J. J. Abrams</author>
+        <year>2015</year>
+        <cast>
+            <actor>T. Hanks</actor>
+        </cast>
+        <distribution>
+            <company>Warner Bros</company>
+            <company>Paramount</company>
+        </distribution>
+        <streaming>4</streaming>
+    </film>
+</netflix>

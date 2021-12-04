@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+	<script type="application/javascript" src="index.js"></script>
+</head>
+<body id ="b">
+    <h1 align = "center">Navigazione Test</h1>
+	<br>
+	<div id="visualizza" style="border: 1px;border-color: black;width: 550px;height: 120px; margin: 0px auto">
+		<div id="bottoni" style="height: 100px;width: 50px;float: right;">
+			<input type="button" onclick="primo()" value="Primo" style="align: right">
+			<input type="button" onclick="avanti()" value="Avanti" style="align: right">
+			<input type="button" onclick="indietro()" value="Indietro" style="align: right">
+			<input type="button" onclick="ultimo()" value="Ultimo" style="align: right">
+			<input type="button" onclick="visualizzaJSON()" value="Visualizza JSON">
+		</div>
+		<div id="contenuto" style="height: 100px;width: 500px;">
+
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<table border="1" align="center">
+		<thead id="tabella">
+					<tr>
+						<th>TestId</th>
+						<th>TestType</th>
+						<th>Name</th>
+						<th>CommandLine</th>
+						<th>Input</th>
+						<th>Output</th>
+						<th>DataExecution</th>
+						<th>IMG</th>
+						<th>OperatingSystem</th>
+						<th>DeleteTest(no reversable)</th>
+					</tr>
+		</thead>
+		<tbody id="tabTest">
+
+		</tbody>
+	</table>
+	<div style = "width:200px; margin: 0px auto;">
+		<input type="button" onclick="aggiungi()" value="Aggiungi">
+	</div>
+	
+	<!--<input type="button" onclick="eliminaCategoria()" value="Elimina per categoria" style="align: right">-->
+</body>
+</html>

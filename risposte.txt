@@ -1,0 +1,100 @@
+Compito di Piumatti Filippo
+
+
+1)
+
+I TRE NODI PRINCIPALI DI UN ALBERO  XML SONO I SEGUENTI:
+-NODO RADICE: OVVERO IL NODO PRINCIPALE CHE CONTIENE NODI CHILD O TEXT NODE
+-NODO CHILD: OVVERO I NODI CHE SI POSSONO TROVARE ALL INTERNO DEL NODO RADICE E CHE POSSONO CONTENERE A SUA VOLTA DEI NODI ALL INTERNO
+-TEXT NODE: NODO CHE PUO' CONTENERE SOLO TESTO;
+
+2)
+
+J.S.O.N (java script object notation): E' LA RAPPRESENTAZIONE DEGLI OGGETTI NELL LINGUAGGIO JAVASCRIPT, VIENE USATO PER:
+ -TRASFERIRE DATI NEL WEB,
+- PER DEFINIRE DELLE SEMPLICI PROPRIETA' CSS
+LA DIMENSIONE E' DECISAMENTE MOLTO PIU LEGGERA RISPETTO ALL XML;
+
+3)
+[{"title:myTitle",
+  "author":"myAuthor",
+  "year":"publishingYear",
+  "price":29.99
+},
+{
+  "title:myTitle",
+  "author":"myAuthor",
+  "year":"publishingYear",
+  "price":29.99
+]};
+
+4)
+<!--NODO NETFLIX CHE CONTNETE 1 O PIU FILM PERCHE IL PIU INDICA 1 O + MA NON 0 PERCHE LO ZERO SI USA O QUANDO NE VOLGLIAMO 0 O 1 (SI USA "?") O QUANDO NE VOGLIAMO 0 O +(SI USA "*")-->
+<!ELEMENT netflix (film)+> 
+        <!--NODO FILM CHE CONTNETE 1 TITLE UN AUTHOR, UN YEAR,UN CAST, UN DISTRIBUCTION,ED UNO STREAMING , (UNO E UNO SOLO!)-->
+        <!ELEMENT film (title)(author)(year)(cast)(distribution)(streaming)>
+        <!-- ATTRUBUTO a film che contiene solo stringhe  ed e required ovvero che ci deve essere per forza-->
+        <!ATTLIST film category CDATA ("animation")|("horror")|("action")#REQUIRED ()>
+        <!-- elemento title solo caratteri (#pcdata)-->
+        <!ELEMENT title (#PCDATA)>
+        <!-- elemento author solo caratteri (#pcdata)-->
+        <!ELEMENT author (#PCDATA)>
+        <!-- elemento year solo caratteri (#pcdata)-->
+        <!ELEMENT year (#PCDATA)>
+        <!-- elemento cast che a sua volta contiene uno o piu actor-->
+        <!ELEMENT cast (actor+)>
+        <!-- elemento actor solo caratteri (#pcdata)-->
+        <!ELEMENT actor (#PCDATA)>
+        <!-- elemento distribution che a sua volta contiene una o più company-->
+        <!ELEMENT distribution (company+)>
+        <!-- elemento company solo caratteri (#pcdata)-->
+        <!ELEMENT company (#PCDATA)>
+        <!-- elemento streaming solo caratteri (#pcdata)-->
+        <!ELEMENT streaming (#PCDATA)>
+5)
+
+[{
+"netflix"://nodo radice
+	[{"film": //nodo film che contiene dentro gli altri nodi, metto il nodo film ogni volta che ne inserisco uno
+		"category":"animation",
+		"title":"UP",
+		"author":"j.k Rowling",
+		"year":"2020",
+		"cast": 
+			"actor":"k . kostner",
+			"actor":"b. afleck",
+		"distribuction":
+				"company":"Warner Bros",
+				"company":"underground",
+		"streaming":1.5
+	"film":
+		"category":"animation",
+		"title":"UP",
+		"author":"j.k Rowling",
+		"year":"2020",
+		"cast": //cast che contiene gli actor stesso ,funzionamento del nodo film ma con meno roba
+			"actor":"k . kostner",
+			"actor":"b. afleck",
+		"distribuction": // distribution che contiene i company ,stesso funzionamento del nodo film ma con meno roba
+				"company":"Warner Bros",
+				"company":"underground",
+		"streaming":1.5
+	"film":
+		"category":"animation",
+		"title":"UP",
+		"author":"j.k Rowling",
+		"year":"2020",
+		"cast": 
+			"actor":"k . kostner",
+			"actor":"b. afleck",
+		"distribuction":
+				"company":"Warner Bros",
+				"company":"underground",
+		"streaming":1.5
+]};
+
+
+
+
+
+

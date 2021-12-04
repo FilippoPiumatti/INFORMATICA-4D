@@ -1,0 +1,24 @@
+p {
+    padding:0;
+    margin:2px
+}
+
+body > fieldset{
+    width:320px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius:10px;
+}
+
+select:last-of-type{
+    vertical-align:top;
+}
+
+div{
+    width:300px;
+    padding:6px;
+    background-color:#FF4;
+    font-weight:bold;
+    text-decoration:none;
+}

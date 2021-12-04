@@ -1,0 +1,44 @@
+<!--formato codifica UFT 8 senza BOM-->
+
+<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8"/> <!--tag di autochiusura-->
+	<script type="application/javascript" src="aggiungi.js"></script>
+	<title>Inserimento dati</title> <!--visualizzato nella scheda-->
+</head>
+
+<body>
+	<h1 align="center">Insert Test</h1> <!--visualizzato nella pagina-->
+	<form id ="frm1">
+		<label for="txtTitolo">TestId </label>
+		<input type="text" id="txtTestId" name="txtTestId" placeholder="testId: ">
+		<br><br>
+		<label for="txtAutore">TestType </label>
+		<input type="text" id="txtTestType" name="txtTestType" placeholder="test type:">
+		<br><br>
+		<label for="txtAutore">Name </label>
+		<input type="text" id="txtName" name="txtName" placeholder="name of the test:">
+		<br><br>
+		<label for="txtLingua">CMD </label>
+		<input type="text" id="txtCommandLine" name="txtCmd" placeholder="cmd:">
+		<br><br>
+		<label for="txtAnno">Input </label>
+		<input type="text" id="txtInput" name="txtInput" placeholder="input:">
+		<br><br>
+		<label for="txtPrezzo">Output </label>
+		<input type="text" id="txtOutput" name="txtOutput" placeholder="output:">
+		<br><br>
+		<label for="txtPrezzo">Data Execution of the test </label>
+		<input type="text" id="txtDataExecution" name="txtDataexecution" placeholder="date execution of the test">
+		<br><br>
+		<label for="txtPrezzo">Operating System </label>
+		<div id="divCmb">
+
+		</div>
+		<button type="button" onclick="salva()">Salva</button>
+		<button type="button" onclick="ritorna()">Annulla</button>
+	</form>
+</body>
+
+</html>

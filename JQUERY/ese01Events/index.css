@@ -1,0 +1,18 @@
+.lampadina{
+    margin: 0px auto;
+    width: 150px;
+    height: 275px;
+    background-image: url("img/lampadina.png");
+    background-color: #cccccc;
+}
+#pulsanti{
+    text-align: center;
+    width: 300px;
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 30px;
+}
+.accesa{
+    background-color: #ffffaa;
+}
